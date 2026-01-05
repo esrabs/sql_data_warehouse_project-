@@ -57,7 +57,7 @@
   </ul>
 
   <p><strong> Architecture diagram</strong></p>
-  <img src="docs/architecture.png" alt="Architecture diagram (Bronze → Silver → Gold)" />
+  <img src="docs/data_architecture.png" alt="Architecture diagram (Bronze → Silver → Gold)" />
 
   <hr />
 
@@ -74,7 +74,7 @@
   </ul>
 
   <p><strong> Star schema diagram</strong></p>
-  <img src="docs/star_schema.png" alt="Star schema diagram" />
+  <img src="docs/data_model.png" alt="Star schema diagram" />
 
   <h3>Why Star Schema?</h3>
   <ul>
