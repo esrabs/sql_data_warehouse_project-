@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SQL Data Warehouse Project - README</title>
-  <style>
-    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 32px; color: #111; }
-    code, pre { font-family: Consolas, Monaco, "Courier New", monospace; }
-    pre { background: #f6f8fa; padding: 14px; border-radius: 8px; overflow: auto; }
-    .badge { display:inline-block; padding: 4px 10px; border-radius: 999px; background:#eef2ff; margin-right: 8px; font-size: 13px; }
-    img { max-width: 100%; height: auto; border: 1px solid #e5e7eb; border-radius: 10px; margin: 10px 0 18px; }
-    h1, h2, h3 { line-height: 1.25; }
-    hr { border: none; border-top: 1px solid #e5e7eb; margin: 22px 0; }
-    ul { margin-top: 6px; }
-    .muted { color:#555; }
-  </style>
-</head>
-<body>
-
-  <h1>📊 SQL Data Warehouse Project</h1>
+  <h1> SQL Data Warehouse Project</h1>
   <p>
     <span class="badge">SQL Server</span>
     <span class="badge">Medallion (Bronze → Silver → Gold)</span>
@@ -26,7 +6,7 @@
     <span class="badge">Data Engineering</span>
   </p>
 
-  <h2>📌 Project Overview</h2>
+  <h2> Project Overview</h2>
   <p>
     This project demonstrates the design and implementation of an <strong>end-to-end SQL Data Warehouse</strong>
     using <strong>SQL Server</strong>, following industry best practices in data engineering.
@@ -42,18 +22,18 @@
 
   <hr />
 
-  <h2>🏗️ Architecture Overview</h2>
+  <h2> Architecture Overview</h2>
   <p>This warehouse follows a <strong>Medallion Architecture</strong>:</p>
 
   <pre><code>Source Systems → Bronze → Silver → Gold</code></pre>
 
-  <h3>🔹 Source Systems</h3>
+  <h3> Source Systems</h3>
   <ul>
     <li><strong>CRM</strong>: customer, product, and sales information</li>
     <li><strong>ERP</strong>: customer and location reference data</li>
   </ul>
 
-  <h3>🔹 Bronze Layer (Raw)</h3>
+  <h3> Bronze Layer (Raw)</h3>
   <ul>
     <li>Stores raw data as-is</li>
     <li>No business logic</li>
@@ -61,7 +41,7 @@
     <li>Used for traceability and debugging</li>
   </ul>
 
-  <h3>🔹 Silver Layer (Cleaned &amp; Standardized)</h3>
+  <h3> Silver Layer (Cleaned &amp; Standardized)</h3>
   <ul>
     <li>Data cleaning (NULL handling, trimming, standardization)</li>
     <li>Data validation &amp; consistency checks</li>
@@ -69,31 +49,31 @@
     <li>Historical handling (SCD-like logic)</li>
   </ul>
 
-  <h3>🔹 Gold Layer (Analytics Ready)</h3>
+  <h3> Gold Layer (Analytics Ready)</h3>
   <ul>
     <li>Business-oriented tables</li>
     <li><strong>Star Schema</strong></li>
     <li>Optimized for reporting &amp; BI tools</li>
   </ul>
 
-  <p><strong>📷 Architecture diagram</strong></p>
+  <p><strong> Architecture diagram</strong></p>
   <img src="docs/architecture.png" alt="Architecture diagram (Bronze → Silver → Gold)" />
 
   <hr />
 
-  <h2>🧱 Data Modeling – Gold Layer</h2>
+  <h2> Data Modeling – Gold Layer</h2>
   <p>
     The Gold layer is designed using a <strong>Star Schema</strong>, which is the most common modeling approach
     for analytical workloads.
   </p>
 
-  <h3>⭐ Star Schema Design</h3>
+  <h3> Star Schema Design</h3>
   <ul>
     <li><strong>Fact table</strong> at the center (business events)</li>
     <li><strong>Dimension tables</strong> around it (descriptive context)</li>
   </ul>
 
-  <p><strong>📷 Star schema diagram</strong></p>
+  <p><strong> Star schema diagram</strong></p>
   <img src="docs/star_schema.png" alt="Star schema diagram" />
 
   <h3>Why Star Schema?</h3>
@@ -122,7 +102,7 @@
 
   <hr />
 
-  <h2>🔄 Data Processing Logic</h2>
+  <h2> Data Processing Logic</h2>
   <p><strong>Key transformations include:</strong></p>
   <ul>
     <li><code>TRIM</code>, <code>UPPER</code>, <code>LOWER</code> for text standardization</li>
@@ -132,7 +112,7 @@
     <li>Historical tracking using <code>LEAD()</code> for validity periods</li>
   </ul>
 
-  <p><strong>📷 Silver layer transformation flow</strong></p>
+  <p><strong> Silver layer transformation flow</strong></p>
   <img src="docs/silver_layer.png" alt="Silver layer transformation flow" />
 
   <hr />
@@ -147,7 +127,7 @@
 
   <hr />
 
-  <h2>📂 Repository Structure</h2>
+  <h2> Repository Structure</h2>
   <pre><code>sql_data_warehouse_project/
 │
 ├── bronze/
@@ -174,7 +154,7 @@
 
   <hr />
 
-  <h2>🎯 Key Skills Demonstrated</h2>
+  <h2> Key Skills Demonstrated</h2>
   <ul>
     <li>Data warehouse architecture (Medallion)</li>
     <li>Data modeling (Star Schema)</li>
@@ -187,7 +167,7 @@
 
   <hr />
 
-  <h2>🚀 Future Improvements</h2>
+  <h2> Future Improvements</h2>
   <ul>
     <li>Add orchestration (scheduling / automation)</li>
     <li>Add data quality metrics and logging tables</li>
@@ -198,7 +178,7 @@
 
   <hr />
 
-  <h2>👩‍💻 Author</h2>
+  <h2> Author</h2>
   <p>
     <strong>Esrae</strong><br />
     Engineering student – Data &amp; Software<br />
