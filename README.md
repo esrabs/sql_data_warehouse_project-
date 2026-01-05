@@ -86,7 +86,7 @@
 
   <hr />
 
-  <h2>🔗 Join Strategy (Important Design Choice)</h2>
+  <h2> Join Strategy (Important Design Choice)</h2>
   <p>
     In the Gold layer, <strong>LEFT JOINs are intentionally used</strong> instead of INNER JOINs.
   </p>
