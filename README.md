@@ -113,7 +113,7 @@
   </ul>
 
   <p><strong> Silver layer transformation flow</strong></p>
-  <img src="docs/silver_layer.png" alt="Silver layer transformation flow" />
+  <img src="docs/data_flow.png" alt="Silver layer transformation flow" />
 
   <hr />
 
